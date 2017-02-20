@@ -3,6 +3,10 @@ general:
     - app/build/outputs
     - app/build/reports
 
+machine:
+  environment:
+    ANDROID_HOME: /usr/local/android-sdk-linux
+
 dependencies:
   override:
     - echo y | android update sdk --no-ui --all --filter android-25
