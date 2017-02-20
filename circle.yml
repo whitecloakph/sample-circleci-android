@@ -24,3 +24,9 @@ dependencies:
 test:
   override:
     - ./gradlew assembleRelease
+
+deployment:
+  hockey:
+    branch: master
+    commands:
+      - ./scripts/deploy.sh
