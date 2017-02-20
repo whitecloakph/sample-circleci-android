@@ -9,7 +9,8 @@ machine:
 
 dependencies:
   override:
-    - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-25.0.2,android-25,extra-google-m2repository,extra-android-m2repository,extra-google-google_play_services,extra-android-support
+    - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-25.0.2,android-25,extra-google-m2repository,extra-android-m2repository,extra-google-google_play_services
+    - echo y | android update sdk --no-ui --all --filter extra-android-support
     - ./gradlew dependencies
   cache_directories:
     - ~/.gradle
